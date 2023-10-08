@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "include-media/dist/include-media";
 
 @mixin setPadding($vertical, $horizontal) {
     padding: $vertical $horizontal;

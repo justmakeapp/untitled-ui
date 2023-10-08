@@ -1,9 +1,6 @@
-@import "include-media/dist/include-media";
-
 // primary-color
-
 $primary-color-200: #e9d7fe;
-$primary-color-600: #30b0c7;
+$primary-color-600: #30b0c7 !default;
 $primary-color-700: #6941c6;
 
 //gray-color
