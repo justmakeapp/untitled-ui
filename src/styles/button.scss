@@ -1,0 +1,74 @@
+@import "./variables.scss";
+
+@mixin setPadding($vertical, $horizontal) {
+    padding: $vertical $horizontal;
+}
+
+.btn {
+    font-weight: $f-semibold;
+    text-decoration: none;
+    background: white;
+    border-style: none;
+    line-height: 20px;
+    outline: 2px solid transparent;
+    border-radius: $rounded;
+
+    transition-property: background-color, transform, color;
+    transition-duration: 300ms, 300ms, 300ms;
+    transition-timing-function: ease, ease, ease;
+
+    cursor: pointer;
+    font-size: 18px;
+    @include setPadding(16px, 28px);
+
+    &.primary {
+        background-color: $primary-color-600;
+        color: white;
+        &:hover {
+            background-color: $primary-color-700;
+        }
+        &:active {
+            background-color: $primary-color-700;
+            outline: 2px solid $primary-color-200;
+        }
+        &:disabled {
+            background-color: $primary-color-200;
+            cursor: not-allowed;
+        }
+    }
+
+    @include media("<=sm") {
+        &.primary {
+            @include setPadding(8px, 14px);
+            font-size: 14px;
+        }
+    }
+
+    @include media(">sm", "<=md") {
+        &.primary {
+            @include setPadding(10px, 16px);
+            font-size: 14px;
+        }
+    }
+
+    @include media(">md", "<=lg") {
+        &.primary {
+            @include setPadding(10px, 18px);
+            font-size: 16px;
+        }
+    }
+
+    @include media(">lg", "<=xl") {
+        &.primary {
+            @include setPadding(12px, 20px);
+            font-size: 16px;
+        }
+    }
+
+    @include media(">xl") {
+        &.primary {
+            @include setPadding(16px, 28px);
+            font-size: 18px;
+        }
+    }
+}

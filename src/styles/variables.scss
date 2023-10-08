@@ -1,0 +1,41 @@
+@import "../../node_modules/include-media/dist/include-media";
+
+// primary-color
+
+$primary-color-200: #e9d7fe;
+$primary-color-600: #30b0c7;
+$primary-color-700: #6941c6;
+
+//gray-color
+$gray-50: #f9fafb;
+$gray-100: #f2f4f7;
+$gray-200: #eaecf0;
+$gray-300: #d0d5dd;
+$gray-400: #98a2b3;
+$gray-500: #667085;
+$gray-600: #475467;
+$gray-700: #344054;
+$gray-900: #101828;
+
+// border-radius
+$rounded: 8px;
+
+// font-weight
+$f-thin: 100;
+$f-extra-light: 200;
+$f-light: 300;
+$f-normal: 400;
+$f-medium: 500;
+$f-semibold: 600;
+$f-bold: 700;
+
+// breakpoints
+$breakpoints: (
+    "sm": 640px,
+    "md": 768px,
+    "lg": 1024px,
+    "xl": 1280px,
+    phone: 478px,
+    tablet: 991px,
+    desktop: 1339px
+);
