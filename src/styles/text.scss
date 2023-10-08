@@ -4,9 +4,30 @@
 // font-family:;
 // }
 
+.display-lg {
+    line-height: 60px;
+    font-size: 48px;
+}
+
+.display-lg-semi-bold {
+    @extend .display-lg;
+    font-weight: $f-semibold;
+}
+
+.text-xl {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.text-xl-regular {
+    @extend .text-xl;
+    font-weight: $f-normal;
+}
+
 .text-md {
-    line-height: 20px;
     font-size: 14px;
+    line-height: 20px;
     color: $button-primary-fg;
     text-align: center;
 }
