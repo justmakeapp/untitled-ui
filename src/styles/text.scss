@@ -1,0 +1,17 @@
+@import "./variables";
+
+// .text {
+// font-family:;
+// }
+
+.text-md {
+    line-height: 20px;
+    font-size: 14px;
+    color: $button-primary-fg;
+    text-align: center;
+}
+
+.text-md-semi-bold {
+    @extend .text-md;
+    font-weight: $f-semibold;
+}

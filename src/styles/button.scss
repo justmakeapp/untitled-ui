@@ -1,8 +1,31 @@
 @import "./variables.scss";
+@import "./text.scss";
 @import "include-media/dist/include-media";
 
 @mixin setPadding($vertical, $horizontal) {
     padding: $vertical $horizontal;
+}
+
+.btn-base {
+    transition-property: background-color, transform, color;
+    transition-duration: 300ms, 300ms, 300ms;
+    transition-timing-function: ease, ease, ease;
+}
+
+.btn-primary {
+    @extend .btn-base;
+    background-color: $primary-color-600;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $primary-color-700;
+    }
+}
+
+.btn-lg {
+    @extend .text-md-semi-bold;
+    padding: 10px 16px;
+    border-radius: 8px;
 }
 
 .btn {
