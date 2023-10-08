@@ -15,3 +15,15 @@
     @extend .text-md;
     font-weight: $f-semibold;
 }
+
+.text-lg {
+    line-height: 28px;
+    font-size: 18px;
+    color: $button-primary-fg;
+    text-align: center;
+}
+
+.text-lg-semi-bold {
+    @extend .text-lg;
+    font-weight: $f-semibold;
+}

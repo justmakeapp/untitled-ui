@@ -28,6 +28,12 @@
     border-radius: 8px;
 }
 
+.btn-2xl {
+    @extend .text-lg-semi-bold;
+    padding: 16px 22px;
+    border-radius: 8px;
+}
+
 .btn {
     font-weight: $f-semibold;
     text-decoration: none;
