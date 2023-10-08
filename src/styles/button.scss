@@ -7,18 +7,33 @@
 }
 
 .btn-base {
+    text-decoration: none;
+
     transition-property: background-color, transform, color;
     transition-duration: 300ms, 300ms, 300ms;
     transition-timing-function: ease, ease, ease;
 }
 
+// Primary
 .btn-primary {
     @extend .btn-base;
     background-color: $primary-color-600;
-    text-decoration: none;
 
     &:hover {
         background-color: $primary-color-700;
+    }
+}
+
+// Secondary
+.btn-secondary-color {
+    @extend .btn-base;
+    background-color: $button-secondary-color-bg;
+    color: $primary-color-700;
+    border-color: $primary-color-300;
+
+    &:hover {
+        background-color: $primary-color-50;
+        color: $primary-color-800;
     }
 }
 
