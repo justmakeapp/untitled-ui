@@ -14,6 +14,16 @@
     font-weight: $f-semibold;
 }
 
+.display-md {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.display-md-semi-bold {
+    @extend .display-md;
+    font-weight: $f-semibold;
+}
+
 .display-xs {
     font-size: 24px;
     line-height: 32px;
@@ -59,5 +69,15 @@
 
 .text-lg-semi-bold {
     @extend .text-lg;
+    font-weight: $f-semibold;
+}
+
+.text-sm {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-sm-semi-bold {
+    @extend .text-sm;
     font-weight: $f-semibold;
 }
