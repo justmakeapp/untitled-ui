@@ -1,5 +1,5 @@
-@import "./variables.scss";
-@import "./text.scss";
+@import "./variables";
+@import "./text";
 @import "include-media/dist/include-media";
 
 @mixin setPadding($vertical, $horizontal) {
@@ -12,6 +12,18 @@
     transition-property: background-color, transform, color;
     transition-duration: 300ms, 300ms, 300ms;
     transition-timing-function: ease, ease, ease;
+
+    &:hover {
+        transform: translate3d(0, -3px, 0.01px);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
 }
 
 // Primary

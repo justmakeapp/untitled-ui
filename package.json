@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "include-media": "^2.0.0"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }
