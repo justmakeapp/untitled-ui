@@ -25,6 +25,11 @@ $text-primary-600: #475467;
 $text-primary-700: #344054;
 $text-primary-900: #101828;
 
+$text-primary: $text-primary-900;
+$text-secondary: $text-primary-700;
+$text-tertiary: $text-primary-600;
+$text-quarterary: $text-primary-500;
+
 $bg-primary: #fff;
 $bg-secondary: $text-primary-50;
 

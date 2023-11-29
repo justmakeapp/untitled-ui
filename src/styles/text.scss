@@ -77,6 +77,11 @@
     line-height: 20px;
 }
 
+.text-sm-regular {
+    @extend .text-sm;
+    font-weight: $f-normal;
+}
+
 .text-sm-semi-bold {
     @extend .text-sm;
     font-weight: $f-semibold;
